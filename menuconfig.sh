@@ -5,10 +5,10 @@
 RDIR=$(pwd)
 
 # directory containing cross-compile arm64 toolchain
-TOOLCHAIN=$HOME/build/toolchain/gcc-linaro-6.1.1-2016.08-x86_64_aarch64-linux-gnu
+TOOLCHAIN=$HOME/obar/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-linaro-4.9
 
 export ARCH=arm64
-export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-gnu-
+export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-android-
 
 ABORT() {
 	[ "$1" ] && echo "Error: $*"
