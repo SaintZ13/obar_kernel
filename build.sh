@@ -1,8 +1,8 @@
-export LOCALVERSION="-vs995.10b.reStock-1.0"
-export KBUILD_BUILD_USER=BackCheck
-export KBUILD_BUILD_HOST=nowhere
+export LOCALVERSION="-ls997.obar.kernel.version-1.0"
+export KBUILD_BUILD_USER=SaintZ93
+export KBUILD_BUILD_HOST=hidden
 export ARCH=arm64
-export CROSS_COMPILE=$HOME/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export CROSS_COMPILE=$HOME/obar/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-linaro-4.9/bin/aarch64-linux-android-
 
 DIR=$(pwd)
 BUILD="$DIR/build"
@@ -19,7 +19,7 @@ fi
 
 echo "setting up build..."
 mkdir "$BUILD"
-make O="$BUILD" VS995_reStock_defconfig
+make O="$BUILD" device_lge_ls997
 
 echo "building kernel..."
 make O="$BUILD" -j$NPR
